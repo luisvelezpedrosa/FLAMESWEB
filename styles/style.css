@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat as the main font */
+    color: #fff; /* White text */
+    background-color: #FF4545; /* Primary background color */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff; /* White links */
+}
+
+a:hover {
+    color: #f0f0f0; /* Slightly lighter white on hover */
+}
+
+/* Header */
+header {
+    position: absolute; /* Make the header overlay the hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure the header is above the hero image */
+    background: transparent; /* Semi-transparent black background */
+    padding: 1rem 0;
+}
+
+/* Header Container */
+header .container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Vertically align items */
+    padding: 1rem 2rem; /* Add padding for spacing */
+}
+
+/* Logo */
+header .logo {
+    width: 150px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff; /* White text */
+}
+
+
+/* Navigation Links */
+header nav ul {
+    display: flex;
+    gap: 1.5rem; /* Add spacing between navigation links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff; /* White text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .logo {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../assets/FlamesofFoe_Hero.jpeg'); /* Path to the hero image */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* White text */
+    text-align: center;
+    padding-top: 150px; /* Add space below the header */
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for text */
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 1rem;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff; /* White text */
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #fff; /* White text */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #fff; /* White button */
+    color: #FF4545; /* Red text */
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: #f0f0f0; /* Slightly lighter white */
+    color: #FF4545; /* Red text */
+}
+
+/* Music Section */
+#music .music-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Merch Section */
+#merch {
+    background: #FF4545; /* Match the body background */
+    text-align: center;
+}
+
+/* Videos Section */
+#videos .video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#videos iframe {
+    border: 2px solid #fff; /* White border */
+    border-radius: 5px;
+}
+
+/* Tour Section */
+#tour ul {
+    list-style: none;
+    text-align: center;
+}
+
+#tour ul li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff; /* White text */
+}
+
+/* Footer */
+footer {
+    background: #FF4545; /* Match the body background */
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid #fff; /* White border */
+}
+
+footer p {
+    margin-bottom: 1rem;
+    color: #fff; /* White text */
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-links li a {
+    font-size: 1.2rem;
+    color: #fff; /* White links */
+    transition: color 0.3s ease;
+}
+
+footer .social-links li a:hover {
+    color: #f0f0f0; /* Slightly lighter white */
+}
+.logo {
+    width: 30%; /* Set the logo width to 30% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure proper rendering */
+}
+/* Instagram Post Section */
+.instagram-post {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.instagram-post blockquote {
+    border: none;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Full-size Logo */
+.full-logo {
+    width: 100%; /* Make the logo full width */
+    max-width: 600px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+    margin-bottom: 1rem; /* Add spacing below the logo */
+}
+
+/* Header Links */
+.header-links {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 2rem; /* Add spacing between links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-links li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff; /* White text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-links li a:hover {
+    color: #f0f0f0; /* Slightly lighter white on hover */
+}
+
+/* Spotify Player */
+.spotify-player {
+    margin-top: 1rem; /* Add spacing above the player */
+}
