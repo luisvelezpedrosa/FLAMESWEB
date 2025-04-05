@@ -33,6 +33,10 @@ header {
 }
 
 header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -47,7 +51,8 @@ header nav {
 }
 
 header .header-links {
-    display: inline-block;
+    display: flex;
+    gap: 1.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -278,5 +283,55 @@ footer .social-links li a:hover {
 @media (max-width: 480px) {
     .bio-image img {
         max-width: 90%; /* Reduce the maximum width for smaller screens */
+    }
+}
+
+/* Header Container */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Logo */
+header .logo {
+    max-width: 150px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+/* Navigation Links */
+header .header-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .header-links li a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .header-links li a:hover {
+    color: #f0f0f0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .header-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
