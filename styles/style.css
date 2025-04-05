@@ -266,7 +266,7 @@ footer .social-links li a:hover {
 
 .bio-image img {
     width: 100%;
-    max-width: 800px; /* Adjust the maximum width */
+    max-width: 300px; /* Adjust the maximum width */
     height: auto;
     display: block;
     margin: 2rem auto; /* Center the image and add spacing */
