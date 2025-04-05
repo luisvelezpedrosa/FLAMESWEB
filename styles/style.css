@@ -263,3 +263,13 @@ footer .social-links li a:hover {
         height: 200px;
     }
 }
+
+.bio-image img {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width */
+    height: auto;
+    display: block;
+    margin: 2rem auto; /* Center the image and add spacing */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
