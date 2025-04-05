@@ -38,6 +38,35 @@ header .container {
     justify-content: space-between; /* Space between logo and navigation */
     align-items: center; /* Vertically align items */
     padding: 1rem 2rem; /* Add padding for spacing */
+    text-align: center;
+}
+
+header .full-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px; /* Adjust the size of the logo if needed */
+}
+
+header nav {
+    margin-top: 20px; /* Add some spacing between the logo and navigation */
+}
+
+header .header-links {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .header-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header .header-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000; /* Adjust color as needed */
 }
 
 /* Logo */
