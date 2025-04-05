@@ -6,49 +6,44 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat as the main font */
-    color: #fff; /* White text */
-    background-color: #FF4545; /* Primary background color */
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #FF4545;
     line-height: 1.6;
 }
 
 a {
     text-decoration: none;
-    color: #fff; /* White links */
+    color: #fff;
 }
 
 a:hover {
-    color: #f0f0f0; /* Slightly lighter white on hover */
+    color: #f0f0f0;
 }
 
 /* Header */
 header {
-    position: absolute; /* Make the header overlay the hero section */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2; /* Ensure the header is above the hero image */
-    background: transparent; /* Semi-transparent black background */
+    z-index: 2;
+    background: transparent;
     padding: 1rem 0;
 }
 
-/* Header Container */
 header .container {
-    display: flex;
-    justify-content: space-between; /* Space between logo and navigation */
-    align-items: center; /* Vertically align items */
-    padding: 1rem 2rem; /* Add padding for spacing */
     text-align: center;
 }
 
 header .full-logo {
     display: block;
     margin: 0 auto;
-    max-width: 300px; /* Adjust the size of the logo if needed */
+    max-width: 300px;
 }
 
 header nav {
-    margin-top: 20px; /* Add some spacing between the logo and navigation */
+    margin-top: 20px;
 }
 
 header .header-links {
@@ -66,77 +61,32 @@ header .header-links li {
 header .header-links a {
     text-decoration: none;
     font-weight: bold;
-    color: #000; /* Adjust color as needed */
-}
-
-/* Logo */
-header .logo {
-    width: 150px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
-}
-
-
-header h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff; /* White text */
-}
-
-
-/* Navigation Links */
-header nav ul {
-    display: flex;
-    gap: 1.5rem; /* Add spacing between navigation links */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li a {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff; /* White text */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-header .logo {
-    width: 150px; /* Adjust logo size */
-    height: auto;
+    color: #fff;
 }
 
 /* Hero Section */
 #hero {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    background-image: url('../assets/FlamesofFoe_Hero.jpeg'); /* Path to the hero image */
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: #fff; /* White text */
+    align-items: center;
     text-align: center;
-    padding-top: 150px; /* Add space below the header */
+    height: 100vh;
+    background: url('../assets/hero-image.jpg') no-repeat center center/cover;
 }
 
-.hero-text {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for text */
-    padding: 2rem;
-    border-radius: 8px;
+#hero .hero-text {
+    color: #fff;
+    padding: 1rem;
 }
 
-.hero-text h2 {
-    font-size: 3rem;
+#hero h2 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.hero-text p {
-    font-size: 1.5rem;
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Section Styling */
@@ -149,14 +99,14 @@ section h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    color: #fff; /* White text */
+    color: #fff;
 }
 
 section p {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.1rem;
-    color: #fff; /* White text */
+    color: #fff;
 }
 
 .container {
@@ -168,8 +118,8 @@ section p {
 /* Buttons */
 .btn {
     display: inline-block;
-    background: #fff; /* White button */
-    color: #FF4545; /* Red text */
+    background: #fff;
+    color: #FF4545;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     text-transform: uppercase;
@@ -178,8 +128,8 @@ section p {
 }
 
 .btn:hover {
-    background: #f0f0f0; /* Slightly lighter white */
-    color: #FF4545; /* Red text */
+    background: #f0f0f0;
+    color: #FF4545;
 }
 
 /* Music Section */
@@ -191,7 +141,7 @@ section p {
 
 /* Merch Section */
 #merch {
-    background: #FF4545; /* Match the body background */
+    background: #FF4545;
     text-align: center;
 }
 
@@ -204,7 +154,7 @@ section p {
 }
 
 #videos iframe {
-    border: 2px solid #fff; /* White border */
+    border: 2px solid #fff;
     border-radius: 5px;
 }
 
@@ -217,20 +167,20 @@ section p {
 #tour ul li {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #fff; /* White text */
+    color: #fff;
 }
 
 /* Footer */
 footer {
-    background: #FF4545; /* Match the body background */
-    padding: 2rem 0;
+    background: #333;
+    color: #fff;
     text-align: center;
-    border-top: 2px solid #fff; /* White border */
+    padding: 1rem 0;
 }
 
 footer p {
     margin-bottom: 1rem;
-    color: #fff; /* White text */
+    color: #fff;
 }
 
 footer .social-links {
@@ -238,22 +188,26 @@ footer .social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 footer .social-links li a {
     font-size: 1.2rem;
-    color: #fff; /* White links */
+    color: #fff;
     transition: color 0.3s ease;
 }
 
 footer .social-links li a:hover {
-    color: #f0f0f0; /* Slightly lighter white */
+    color: #f0f0f0;
 }
+
 .logo {
-    width: 30%; /* Set the logo width to 30% of its container */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Ensure proper rendering */
+    width: 30%;
+    height: auto;
+    display: block;
 }
+
 /* Instagram Post Section */
 .instagram-post {
     text-align: center;
@@ -268,19 +222,19 @@ footer .social-links li a:hover {
 
 /* Full-size Logo */
 .full-logo {
-    width: 100%; /* Make the logo full width */
-    max-width: 600px; /* Set a maximum width for the logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     display: block;
-    margin: 0 auto; /* Center the logo */
-    margin-bottom: 1rem; /* Add spacing below the logo */
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 /* Header Links */
 .header-links {
     display: flex;
-    justify-content: center; /* Center the navigation links */
-    gap: 2rem; /* Add spacing between links */
+    justify-content: center;
+    gap: 2rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -290,16 +244,59 @@ footer .social-links li a:hover {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: #fff; /* White text */
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .header-links li a:hover {
-    color: #f0f0f0; /* Slightly lighter white on hover */
+    color: #f0f0f0;
 }
 
 /* Spotify Player */
 .spotify-player {
-    margin-top: 1rem; /* Add spacing above the player */
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .header-links {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    header .header-links li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .spotify-player iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .full-logo {
+        max-width: 200px;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    .spotify-player iframe {
+        height: 200px;
+    }
 }
