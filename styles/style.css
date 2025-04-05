@@ -132,32 +132,6 @@ section p {
     color: #FF4545;
 }
 
-/* Music Section */
-#music .music-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-/* Merch Section */
-#merch {
-    background: #FF4545;
-    text-align: center;
-}
-
-/* Videos Section */
-#videos .video-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-#videos iframe {
-    border: 2px solid #fff;
-    border-radius: 5px;
-}
-
 /* Tour Section */
 #tour ul {
     list-style: none;
@@ -208,17 +182,6 @@ footer .social-links li a:hover {
     display: block;
 }
 
-/* Instagram Post Section */
-.instagram-post {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.instagram-post blockquote {
-    border: none;
-    overflow: hidden;
-    border-radius: 8px;
-}
 
 /* Full-size Logo */
 .full-logo {
@@ -285,7 +248,7 @@ footer .social-links li a:hover {
 
 @media (max-width: 480px) {
     header .full-logo {
-        max-width: 200px;
+        max-width: 300px;
     }
 
     #hero h2 {
