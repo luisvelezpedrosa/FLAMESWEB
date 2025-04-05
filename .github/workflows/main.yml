@@ -1,0 +1,19 @@
+on: [push]
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: Deploy with Password
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy with Password
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          username: ${{ secrets.a2418060 }}
+          server: ${{ secrets.access-5017575725.webspace-host.com }}
+          port: ${{ secrets.PORT_22 }}
+          local_path: './static/*'
+          remote_path: '/var/www/app'
+          sftp_only: true
+          password: ${{ secrets.QUIMERA_2025 }}
