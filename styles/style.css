@@ -149,6 +149,24 @@ section p {
     color: #fff;
 }
 
+/* Tour Images Section */
+.tour-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Space between images */
+    margin: 1.5rem 0;
+    flex-wrap: wrap; /* Ensure images stack on smaller screens */
+}
+
+.tour-image {
+    width: 100%;
+    max-width: 300px; /* Medium size for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
 /* Footer */
 footer {
     background: #333;
@@ -249,6 +267,15 @@ footer .social-links li a:hover {
     .spotify-player iframe {
         height: 250px;
     }
+
+    .tour-images {
+        flex-direction: column; /* Stack images vertically */
+        gap: 1rem;
+    }
+
+    .tour-image {
+        max-width: 90%; /* Reduce size for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -267,6 +294,10 @@ footer .social-links li a:hover {
     .spotify-player iframe {
         height: 200px;
     }
+
+    .bio-image img {
+        max-width: 90%; /* Reduce the maximum width for smaller screens */
+    }
 }
 
 .bio-image img {
@@ -277,13 +308,6 @@ footer .social-links li a:hover {
     margin: 2rem auto; /* Center the image and add spacing */
     border-radius: 8px; /* Optional: Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 480px) {
-    .bio-image img {
-        max-width: 90%; /* Reduce the maximum width for smaller screens */
-    }
 }
 
 /* Header Container */
