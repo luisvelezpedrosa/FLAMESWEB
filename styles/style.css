@@ -244,6 +244,19 @@ footer .social-links li a:hover {
     margin-top: 1rem;
 }
 
+/* Carousel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.carousel img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .header-links {
