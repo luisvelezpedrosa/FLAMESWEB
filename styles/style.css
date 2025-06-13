@@ -94,6 +94,17 @@ header .header-links a {
     margin-bottom: 1.5rem;
 }
 
+/* Hero Image */
+.hero-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 1rem auto; /* Center the image */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
 /* Section Styling */
 section {
     padding: 4rem 1rem;
