@@ -97,7 +97,7 @@ header .header-links a {
 /* Hero Image */
 .hero-image {
     width: 100%; /* Make the image responsive */
-    max-width: 600px; /* Limit the maximum width */
+    max-width: 400px; /* Limit the maximum width */
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 1rem auto; /* Center the image */
