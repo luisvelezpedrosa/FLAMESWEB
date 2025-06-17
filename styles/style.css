@@ -314,7 +314,7 @@ footer .social-links li a:hover {
 #epk ul li a {
     text-decoration: none; /* Remove underline */
     font-weight: bold;
-    color: #FF4545; /* Optional: Add a color for the links */
+    color: #f0f0f0; /* Optional: Add a color for the links */
     transition: color 0.3s ease;
 }
 
