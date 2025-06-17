@@ -300,6 +300,28 @@ footer .social-links li a:hover {
     text-align: right;
 }
 
+/* Center the Downloads Section */
+#epk ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    text-align: center; /* Center the list */
+}
+
+#epk ul li {
+    margin: 0.5rem 0; /* Add spacing between links */
+}
+
+#epk ul li a {
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    color: #FF4545; /* Optional: Add a color for the links */
+    transition: color 0.3s ease;
+}
+
+#epk ul li a:hover {
+    color: #333; /* Optional: Change color on hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .header-links {
