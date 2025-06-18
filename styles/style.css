@@ -201,7 +201,7 @@ footer .social-links {
 }
 
 footer .social-links li a {
-    font-size: 0.7rem; /* Reduce size by 30% */
+    font-size: 0.4rem; /* Reduce size by 30% */
     color: #fff;
     transition: color 0.3s ease;
 }
@@ -277,12 +277,12 @@ footer .social-links li a:hover {
 }
 
 .reviews blockquote {
-    font-style: italic;
+    font-style: italic,bold;
     background-color: #FF4545;
     border-left: 4px solid #FF4545;
     margin: 0; /* Remove vertical margin */
     padding: 1rem;
-    color: #333;
+    color: #000000;
     flex: 1 1 calc(33.333% - 1rem); /* Make each blockquote take up 1/3 of the row */
     box-sizing: border-box; /* Include padding and border in width */
     max-width: 300px; /* Optional: Limit the maximum width */
