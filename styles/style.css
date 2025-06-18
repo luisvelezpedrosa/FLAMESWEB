@@ -180,7 +180,7 @@ section p {
 
 /* Footer */
 footer {
-    background: #333;
+    background: #FF4545; /* Match the rest of the page's color */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -194,20 +194,20 @@ footer p {
 footer .social-links {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the icons */
     gap: 1rem;
     padding: 0;
     margin: 0;
 }
 
 footer .social-links li a {
-    font-size: 1.2rem;
+    font-size: 0.7rem; /* Reduce size by 30% */
     color: #fff;
     transition: color 0.3s ease;
 }
 
 footer .social-links li a:hover {
-    color: #f0f0f0;
+    color: #333; /* Optional: Change color on hover */
 }
 
 .logo {
@@ -402,14 +402,14 @@ header .logo {
     height: auto;
 }
 
-/* Navigation Links */
+/* Navigation Links 
 header .header-links {
     display: flex;
     gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
-}
+}*/
 
 header .header-links li a {
     font-size: 1rem;
