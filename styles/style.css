@@ -328,7 +328,7 @@ footer .social-links li a:hover {
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
-    height: 45vw; /* Responsive height, adjust as needed */
+    height: 65vw; /* Responsive height, adjust as needed */
     min-height: 280px;
     max-height: 420px;
     display: flex;
