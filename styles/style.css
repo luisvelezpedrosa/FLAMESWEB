@@ -355,8 +355,8 @@ footer .social-links li a:hover {
 }
 
 .full-logo {
-    max-width: 350px;
-    width: 90%;
+    max-width: 700px;
+    width: 80vw;
     margin: 0 auto;
     display: block;
     filter: drop-shadow(0 2px 12px rgba(0,0,0,0.5));
