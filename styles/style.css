@@ -347,9 +347,7 @@ footer .social-links li a:hover {
 }
 
 .epk-hero-header .container {
-    position: relative;
-    z-index: 2;
-    width: 100%;
+    display: block !important;
     text-align: center;
     padding-bottom: 1.5rem;
 }
@@ -435,6 +433,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    text-align: center;
 }
 
 /* Logo */
