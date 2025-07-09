@@ -40,11 +40,11 @@ header .container {
     text-align: center;
 }
 
-header .full-logo {
+/*header .full-logo {
     display: block;
     margin: 0 auto;
     max-width: 300px;
-}
+}*/
 
 header nav {
     margin-top: 20px;
@@ -218,14 +218,14 @@ footer .social-links li a:hover {
 
 
 /* Full-size Logo */
-.full-logo {
+/*.full-logo {
     width: 100%;
     max-width: 600px;
     height: auto;
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
-}
+}*/
 
 /* Header Links */
 .header-links {
