@@ -40,11 +40,6 @@ header .container {
     text-align: center;
 }
 
-/*header .full-logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-}*/
 
 header nav {
     margin-top: 20px;
@@ -210,22 +205,6 @@ footer .social-links li a:hover {
     color: #333; /* Optional: Change color on hover */
 }
 
-/*.logo {
-    width: 30%;
-    height: auto;
-    display: block;
-}*/
-
-
-/* Full-size Logo */
-/*.full-logo {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-}*/
 
 /* Header Links */
 .header-links {
@@ -392,9 +371,7 @@ footer .social-links li a:hover {
 }
 
 @media (max-width: 480px) {
-    /*header .full-logo {
-        max-width: 300px;
-    }*/
+   
 
     #hero h2 {
         font-size: 1.5rem;
@@ -438,14 +415,6 @@ header .logo {
     height: auto;
 }
 
-/* Navigation Links 
-header .header-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}*/
 
 header .header-links li a {
     font-size: 1rem;
