@@ -186,26 +186,6 @@ footer p {
     color: #fff;
 }
 
-footer .social-links {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Center the icons */
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-footer .social-links li a {
-    font-size: 0.4rem; /* Reduce size by 30% */
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-footer .social-links li a:hover {
-    color: #333; /* Optional: Change color on hover */
-}
-
-
 /* Header Links */
 .header-links {
     display: flex;
@@ -358,6 +338,24 @@ footer .social-links li a:hover {
 .mosaic-gallery img:hover {
     transform: scale(1.80);
     box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.social-icons img {
+    width: 13px;   /* 40% smaller if original was ~22px */
+    height: 13px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
 }
 
 /* Responsive Design */
