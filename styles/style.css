@@ -471,3 +471,8 @@ header .header-links li a:hover {
     position: relative !important;
     z-index: 2 !important; /* Ensure text is above the image */
 }
+
+#epk h3,
+#epk p {
+    text-align: center;
+}
