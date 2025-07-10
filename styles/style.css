@@ -336,6 +336,30 @@ footer .social-links li a:hover {
     filter: drop-shadow(0 2px 12px rgba(0,0,0,0.5));
 }
 
+/* Mosaic Gallery */
+.mosaic-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 2rem 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.mosaic-gallery img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.mosaic-gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .header-links {
