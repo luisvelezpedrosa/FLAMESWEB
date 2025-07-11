@@ -320,7 +320,7 @@ footer p {
 .mosaic-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
+    gap: 6px;
     margin: 2rem 0;
     justify-items: center;
     align-items: center;
