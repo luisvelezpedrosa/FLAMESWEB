@@ -23,26 +23,23 @@ a:hover {
 
 /* Header */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
-    background: transparent;
-    padding: 1rem 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    background: #FF4545;
+    padding: 0.35rem 0;
     text-align: center;
 }
 
+header .container {
+    display: inline-block;
+    padding: 1rem;
+}
 
 header nav {
-    margin-top: 20px;
+    margin: 0;
 }
 
 header .header-links {
@@ -51,17 +48,25 @@ header .header-links {
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 header .header-links li {
     display: inline;
-    margin: 0 15px;
+    margin: 0;
 }
 
 header .header-links a {
     text-decoration: none;
     font-weight: bold;
     color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header .header-links a:hover {
+    color: #f0f0f0;
 }
 
 /* Hero Section */
@@ -72,11 +77,13 @@ header .header-links a {
     text-align: center;
     height: 100vh;
     background: url('../assets/FlamesofFoe_Hero.jpeg') no-repeat center center/cover;
+    margin-top: 60px;
 }
 
 #hero .hero-text {
     color: #fff;
     padding: 1rem;
+    text-align: center;
 }
 
 #hero h2 {
@@ -91,16 +98,26 @@ header .header-links a {
 
 /* Hero Image */
 .hero-image {
-    width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Limit the maximum width */
-    height: auto; /* Maintain aspect ratio */
     display: block;
-    margin: 1rem auto; /* Center the image */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Logo */
+.hero-logo {
+    max-width: 700px;
+    width: 90vw;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
 }
 
 /* Section Styling */
+main {
+    margin-top: 40px;
+}
+
 section {
     padding: 4rem 1rem;
 }
@@ -141,6 +158,13 @@ section p {
 .btn:hover {
     background: #f0f0f0;
     color: #FF4545;
+}
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Tour Section */
@@ -184,29 +208,6 @@ footer {
 footer p {
     margin-bottom: 1rem;
     color: #fff;
-}
-
-/* Header Links */
-.header-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header-links li a {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.header-links li a:hover {
-    color: #f0f0f0;
 }
 
 /* Spotify Player */
@@ -422,48 +423,6 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
 }
 
-/* Header Container */
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-}
-
-/* Logo */
-header .logo {
-    max-width: 150px; /* Adjust the size of the logo */
-    height: auto;
-}
-
-
-header .header-links li a {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-header .header-links li a:hover {
-    color: #f0f0f0;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .header-links {
-        margin-top: 1rem;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
 .epk-hero-header .container {
     display: block !important;
     text-align: center !important;
