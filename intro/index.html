@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flames of Foe — Show Intro</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+  }
+
+  #stage {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+  }
+
+  #intro {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <video id="intro" autoplay muted playsinline preload="auto">
+    <source src="intro.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  const stage = document.getElementById('stage');
+  const video = document.getElementById('intro');
+
+  // Watchdog: Chrome reliably pauses a freshly-started autoplay video
+  // ~30-60ms in (while it settles initial buffering of the large file),
+  // then never resumes on its own. Resume unless it actually reached the
+  // end.
+  video.addEventListener('pause', () => {
+    if (!video.ended) {
+      video.play().catch(() => {});
+    }
+  });
+
+  function isFullscreen() {
+    return !!document.fullscreenElement;
+  }
+
+  // Keep the screen from sleeping during the (up to 90-minute) playback.
+  // The lock is auto-released whenever the tab is hidden, so it's
+  // re-requested on visibilitychange and on every interaction.
+  let wakeLock = null;
+
+  async function requestWakeLock() {
+    if (!('wakeLock' in navigator) || wakeLock) return;
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+      wakeLock.addEventListener('release', () => { wakeLock = null; });
+    } catch (e) {
+      wakeLock = null;
+    }
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') requestWakeLock();
+  });
+
+  requestWakeLock();
+
+  function requestFullscreen() {
+    const el = stage;
+    const request = el.requestFullscreen
+      || el.webkitRequestFullscreen
+      || el.msRequestFullscreen;
+    try {
+      if (request) {
+        // Older WebKit's webkitRequestFullscreen doesn't return a promise.
+        const result = request.call(el);
+        if (result && typeof result.catch === 'function') {
+          result.catch(() => {});
+        }
+        return;
+      }
+    } catch (e) {
+      // fall through to the video-only fallback below
+    }
+    // iPhone Safari has no element-level Fullscreen API; fall back to
+    // the video-only fullscreen it does support.
+    if (video.webkitEnterFullscreen) {
+      video.webkitEnterFullscreen();
+    }
+  }
+
+  // Clicking (or tapping, or pressing a key) anywhere enters fullscreen.
+  // Re-checked on every interaction, not just the first, so fullscreen
+  // can be re-entered after an accidental Escape.
+  //
+  // requestFullscreen() is only called once the initial autoplay play()
+  // promise has settled — calling it while that promise is still pending
+  // (e.g. a click landing right after page load) can abort the pending
+  // play and leave the video paused.
+  let readyForFullscreen = false;
+
+  ['click', 'keydown', 'touchstart'].forEach((evt) => {
+    document.addEventListener(evt, () => {
+      if (!isFullscreen() && readyForFullscreen) {
+        requestFullscreen();
+      }
+      if (video.paused) {
+        video.play().catch(() => {});
+      }
+      requestWakeLock();
+    });
+  });
+
+  video.play()
+    .catch(() => {})
+    .finally(() => { readyForFullscreen = true; });
+</script>
+
+</body>
+</html>
