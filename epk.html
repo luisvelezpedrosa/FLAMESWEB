@@ -39,22 +39,21 @@
                         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6bxYv7NmQ9FcgAUgniahTa?utm_source=generator&si=31c845d28ddc40f9" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
             <!-- Short Bio Section -->
-            <h2>Bio/</h2>
+            <h2 data-i18n="bio_title">Bio/</h2>
             <div style="text-align:center; margin: 2rem 0;">
-    <img src="assets/FOFVOL2026_Band_2.jpg" alt="Flames of Foe Live" style="max-width:70%; height:auto; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.15);">
+    <img src="assets/FOFVOL2026_Band_2.jpg" alt="Flames of Foe Live" data-i18n-attr="alt:alt_band_live" style="max-width:70%; height:auto; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.15);">
 </div>
+                <p data-i18n="bio_p1">
+                    Flames of Foe is a Barcelona-based experimental rock band known for their distinctive blend of crushing riffs and haunting melodies. Since debuting with two singles in 2017-2018, they've carved out a unique niche in the underground scene through their willingness to push boundaries.
+                </p>
+                <p data-i18n="bio_p2">
+                    The band demonstrated their experimental edge with a 2019 remix EP featuring international collaborations, followed by a well-received debut album in 2022 that showcased their signature mix of complex rhythms and melodic sensibility. They've built a solid live reputation across Spain, performing in Barcelona, Madrid, and other cities.
+                </p>
+                <p data-i18n="bio_p3">
+                    Their second album, <em>Tendrils</em>, recorded at Siete Barbas Estudio with producer Daniel Gil, aims to elevate their sound even further, and represents a significant step forward in their evolution as experimental rock innovators.
+                </p>
 
-                <p>
-                    Flames of Foe es una banda de rock experimental con sede en Barcelona conocida por su distintiva mezcla de riffs enigmáticos y melodías inquietantes. Desde su debut con dos sencillos en 2017-2018, se han labrado un nicho único en la escena underground gracias a su voluntad de traspasar los límites.
-                </p>
-                <p>
-                    La banda demostró su enfoque experimental con un EP de remezclas de 2019 que presenta colaboraciones internacionales, seguido de un álbum debut bien recibido en 2022 que mostró su mezcla característica de ritmos complejos y sensibilidad melódica. Han construido una sólida reputación en vivo en toda España, actuando en Barcelona, Madrid y otras ciudades.
-                </p>
-                <p>
-                    Su próximo segundo álbum, grabado en Siete Barbas Estudio con el productor Daniel Gil, promete elevar aún más su sonido. Éste nuevo lanzamiento se posiciona como un importante paso adelante en su insaciable busqueda sonora en el rock experimental.
-                </p>
-
-                <h2>Reseñas/</h2>
+                <h2 data-i18n="reviews_title">Reviews/</h2>
                 <div class="reviews">
                     <blockquote>
                         <p>'Wow this is awesome! Love the visuals and the song sounds great!'</p>
@@ -86,24 +85,24 @@
                     </a>
                 </div>
 
-                <h2>Descargas/</h2>
+                <h2 data-i18n="downloads_title">Downloads/</h2>
                 <p></p>
                 <ul>
-                    <li><a href="assets/press-photos.zip" download>Press photos</a></li>
-                        <li><a href="assets/FlamesofFoe_PressKit_2025.pdf" download>Band Bio PDF</a></li>
-                        <li><a href="assets/FlamesofFoe_StagePlot_Rider.pdf" download>Rider and Stage Plot PDF</a></li>
+                    <li><a href="assets/press-photos.zip" download data-i18n="press_photos">Press photos</a></li>
+                        <li><a href="assets/FlamesofFoe_PressKit_2025_EN.pdf" data-i18n-href="assets/FlamesofFoe_PressKit_2025_{LANG}.pdf" download data-i18n="bio_pdf">Band Bio PDF</a></li>
+                        <li><a href="assets/FlamesofFoe_StagePlot_Rider_EN.pdf" data-i18n-href="assets/FlamesofFoe_StagePlot_Rider_{LANG}.pdf" download data-i18n="rider_pdf">Rider and Stage Plot PDF</a></li>
                 </ul>
 
 <!-- Stage Plot Section -->
 <div style="text-align:center; margin: 2rem 0;">
-    <img src="assets/FlamesOfFoe_StagePlot2026.jpg" alt="Flames of Foe Stage Plot" style="max-width:70%; height:auto; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.15);">
-    <div style="color:#fff; margin-top:0.5rem; font-size:1rem;">Stage Plot</div>
+    <img src="assets/FlamesOfFoe_StagePlot2026.jpg" alt="Flames of Foe Stage Plot" data-i18n-attr="alt:alt_stage_plot" style="max-width:70%; height:auto; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.15);">
+    <div style="color:#fff; margin-top:0.5rem; font-size:1rem;" data-i18n="stage_plot">Stage Plot</div>
 </div>
-                <h2>Contacto/</h2>
-                <h3>Contratación y Prensa</h3> 
+                <h2 data-i18n="contact_title">Contact/</h2>
+                <h3 data-i18n="booking_press">Booking and Press</h3>
                 <p>Caio Pastore - Diablero Music<br><a href="mailto:diableromusicrecords@gmail.com">diableromusicrecords@gmail.com</a></br></p>
 
-                <h3>Otras consultas:</h3>
+                <h3 data-i18n="other_inquiries">Other inquiries:</h3>
                 <p><a href="mailto:flamesoffoe@gmail.com">flamesoffoe@gmail.com</a></p>
 
             </div>
@@ -115,5 +114,8 @@
         </section>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/translations/common.js"></script>
+    <script src="scripts/translations/epk.js"></script>
+    <script src="scripts/i18n.js"></script>
 </body>
 </html>

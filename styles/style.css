@@ -489,3 +489,27 @@ footer p {
 #epk p {
     text-align: center;
 }
+/* Language Selector */
+.language-selector {
+    position: fixed;
+    top: 0.75rem;
+    right: 1rem;
+    z-index: 20;
+}
+
+.language-dropdown {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #fff;
+    background: #FF4545;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+.language-dropdown option {
+    color: #000;
+    background: #fff;
+}

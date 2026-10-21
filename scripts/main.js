@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
         // Load and inject menu
-        const menuResponse = await fetch('menu.html');
+        const menuResponse = await fetch('menu.html', { cache: 'no-cache' });
         const menuHTML = await menuResponse.text();
         
         const headers = document.querySelectorAll('header .container');
@@ -11,11 +11,16 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
 
         // Load and inject footer
-        const footerResponse = await fetch('footer.html');
+        const footerResponse = await fetch('footer.html', { cache: 'no-cache' });
         const footerHTML = await footerResponse.text();
-        
+
         const body = document.body;
         body.appendChild(document.createRange().createContextualFragment(footerHTML));
+
+        // Translate the injected menu and footer (see i18n.js)
+        if (typeof switchLanguage === 'function') {
+            switchLanguage(document.documentElement.lang);
+        }
 
         // Handle hamburger menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
