@@ -1,0 +1,57 @@
+// EPK page translations (see scripts/i18n.js)
+const translations = {
+    en: {
+        page_title: "EPK - Flames of Foe",
+        bio_title: "Bio/",
+        bio_p1: "Flames of Foe is a Barcelona-based experimental rock band known for their distinctive blend of crushing riffs and haunting melodies. Since debuting with two singles in 2017-2018, they've carved out a unique niche in the underground scene through their willingness to push boundaries.",
+        bio_p2: "The band demonstrated their experimental edge with a 2019 remix EP featuring international collaborations, followed by a well-received debut album in 2022 that showcased their signature mix of complex rhythms and melodic sensibility. They've built a solid live reputation across Spain, performing in Barcelona, Madrid, and other cities.",
+        bio_p3: "Their second album, <em>Tendrils</em>, recorded at Siete Barbas Estudio with producer Daniel Gil, aims to elevate their sound even further, and represents a significant step forward in their evolution as experimental rock innovators.",
+        reviews_title: "Reviews/",
+        downloads_title: "Downloads/",
+        press_photos: "Press photos",
+        bio_pdf: "Band Bio PDF",
+        rider_pdf: "Rider and Stage Plot PDF",
+        stage_plot: "Stage Plot",
+        contact_title: "Contact/",
+        booking_press: "Booking and Press",
+        other_inquiries: "Other inquiries:",
+        alt_band_live: "Flames of Foe Live",
+        alt_stage_plot: "Flames of Foe Stage Plot"
+    },
+    es: {
+        page_title: "EPK - Flames of Foe",
+        bio_title: "Bio/",
+        bio_p1: "Flames of Foe es una banda de rock experimental con sede en Barcelona conocida por su distintiva mezcla de riffs enigmáticos y melodías inquietantes. Desde su debut con dos sencillos en 2017-2018, se han labrado un nicho único en la escena underground gracias a su voluntad de traspasar los límites.",
+        bio_p2: "La banda demostró su enfoque experimental con un EP de remezclas de 2019 que presenta colaboraciones internacionales, seguido de un álbum debut bien recibido en 2022 que mostró su mezcla característica de ritmos complejos y sensibilidad melódica. Han construido una sólida reputación en vivo en toda España, actuando en Barcelona, Madrid y otras ciudades.",
+        bio_p3: "Su segundo álbum, <em>Tendrils</em>, grabado en Siete Barbas Estudio con el productor Daniel Gil, busca elevar aún más su sonido y representa un importante paso adelante en su evolución como innovadores del rock experimental.",
+        reviews_title: "Reseñas/",
+        downloads_title: "Descargas/",
+        press_photos: "Fotos de prensa",
+        bio_pdf: "Biografía de la banda (PDF)",
+        rider_pdf: "Rider y Stage Plot (PDF)",
+        stage_plot: "Stage Plot",
+        contact_title: "Contacto/",
+        booking_press: "Contratación y Prensa",
+        other_inquiries: "Otras consultas:",
+        alt_band_live: "Flames of Foe en directo",
+        alt_stage_plot: "Stage plot de Flames of Foe"
+    },
+    ca: {
+        page_title: "EPK - Flames of Foe",
+        bio_title: "Bio/",
+        bio_p1: "Flames of Foe és una banda de rock experimental amb seu a Barcelona coneguda per la seva barreja distintiva de riffs enigmàtics i melodies inquietants. Des del seu debut amb dos senzills el 2017-2018, s'han obert un espai únic a l'escena underground gràcies a la seva voluntat de traspassar els límits.",
+        bio_p2: "La banda va demostrar el seu enfocament experimental amb un EP de remescles del 2019 amb col·laboracions internacionals, seguit d'un àlbum de debut ben rebut el 2022 que va mostrar la seva barreja característica de ritmes complexos i sensibilitat melòdica. Han construït una sòlida reputació en directe arreu d'Espanya, actuant a Barcelona, Madrid i altres ciutats.",
+        bio_p3: "El seu segon àlbum, <em>Tendrils</em>, enregistrat a Siete Barbas Estudio amb el productor Daniel Gil, pretén elevar encara més el seu so i representa un important pas endavant en la seva evolució com a innovadors del rock experimental.",
+        reviews_title: "Ressenyes/",
+        downloads_title: "Descàrregues/",
+        press_photos: "Fotos de premsa",
+        bio_pdf: "Biografia de la banda (PDF)",
+        rider_pdf: "Rider i Stage Plot (PDF)",
+        stage_plot: "Stage Plot",
+        contact_title: "Contacte/",
+        booking_press: "Contractació i Premsa",
+        other_inquiries: "Altres consultes:",
+        alt_band_live: "Flames of Foe en directe",
+        alt_stage_plot: "Stage plot de Flames of Foe"
+    }
+};

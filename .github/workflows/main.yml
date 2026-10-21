@@ -10,10 +10,10 @@ jobs:
       - name: Deploy with Password
         uses: wlixcc/SFTP-Deploy-Action@v1.2.5
         with:
-          username: ${{ secrets.a2418060 }}
-          server: ${{ secrets.access-5017575725.webspace-host.com }}
-          port: ${{ secrets.PORT_22 }}
-          local_path: './static/*'
+          username: ${{ secrets.SFTP_USERNAME }}
+          server: ${{ secrets.SFTP_SERVER }}
+          port: ${{ secrets.SFTP_PORT }}
+          local_path: './*'
           remote_path: '/var/www/app'
           sftp_only: true
-          password: ${{ secrets.QUIMERA_2025 }}
+          password: ${{ secrets.SFTP_PASSWORD }}

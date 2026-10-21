@@ -18,13 +18,13 @@
     <main>
         <!-- Images Section -->
         <div class="tour-images">
-            <img src="assets/DSC02148.jpg" alt="Tour Image 1" class="tour-image">
-            <img src="assets/IMG-20240302-WA0008.jpg" alt="Tour Image 2" class="tour-image">
+            <img src="assets/DSC02148.jpg" alt="Tour Image 1" data-i18n-attr="alt:alt_tour1" class="tour-image">
+            <img src="assets/IMG-20240302-WA0008.jpg" alt="Tour Image 2" data-i18n-attr="alt:alt_tour2" class="tour-image">
         </div>
         <section id="tour">
             <div class="container">
-                <h1>Tour Dates</h1>
-                <p>Catch Flames of Foe live at a venue near you!</p>
+                <h1 data-i18n="tour_title">Tour Dates</h1>
+                <p data-i18n="tour_intro">Catch Flames of Foe live at a venue near you!</p>
                 <!-- Songkick Widget -->
                 <div id="songkick-widget">
                     <a href="https://www.songkick.com/artists/10052634" class="songkick-widget" data-theme="light" data-track-button="on" data-font-color="#FFFFFF" data-background-color="#FF4545">
@@ -36,5 +36,8 @@
         </section>
     </main>
     <script src="scripts/main.js"></script>
+    <script src="scripts/translations/common.js"></script>
+    <script src="scripts/translations/tour.js"></script>
+    <script src="scripts/i18n.js"></script>
 </body>
 </html>
